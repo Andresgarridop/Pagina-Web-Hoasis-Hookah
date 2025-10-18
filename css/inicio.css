@@ -1,0 +1,261 @@
+/* ==========================================================
+    PÁGINA DE INICIO 
+   ========================================================== */
+
+/* --- SECCIÓN 1: Banner principal --- */
+.banner-principal img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- SECCIÓN 2: Cachimbas más vendidas --- */
+.productos {
+  text-align: center;
+  padding: 60px 50px;
+  background-color: var(--color-blanco);
+}
+
+.productos h2 {
+  font-size: 1.8em;
+  color: var(--color-texto);
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.contenedor-productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.producto {
+  background-color: var(--color-fondo-claro);
+  border-radius: 10px;
+  padding: 20px;
+  width: 230px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 0.95em;
+  color: var(--color-texto);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.producto h3 span {
+  display: block;
+  font-weight: 400;
+  color: var(--color-gris);
+  font-size: 0.9em;
+}
+
+.precio {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--color-texto);
+  font-size: 1em;
+}
+
+.boton {
+  background-color: var(--color-rosa);
+  color: var(--color-blanco);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #e0006e;
+}
+
+
+
+
+/* ==========================================================
+    SECCIÓN 3 - IMAGEN + TEXTO PROMOCIONAL (A PANTALLA COMPLETA)
+   ========================================================== */
+.promocion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  padding: 0; /* 🔹 sin márgenes exteriores */
+}
+
+.promocion .imagen-promocion {
+  flex: 1 1 50%; /* 🔹 mitad izquierda */
+}
+
+.promocion .imagen-promocion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔹 ocupa todo el alto sin deformarse */
+  display: block;
+}
+
+.texto-promocion {
+  flex: 1 1 50%; /* 🔹 mitad derecha */
+  padding: 50px 60px; /* 🔹 espacio interior */
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.texto-promocion h2 {
+  font-size: 1.4em; /* 🔹 un poco más pequeño */
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--color-blanco);
+}
+
+.texto-promocion p {
+  font-size: 0.9em; /* 🔹 texto más compacto */
+  margin-bottom: 12px;
+  color: #ddd;
+}
+
+.texto-promocion a {
+  color: var(--color-azul);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.texto-promocion a:hover {
+  color: var(--color-rosa); /* 🔹 cambia a rosa al pasar el ratón */
+  text-decoration: underline;
+}
+
+
+/* ==========================================================
+    SECCIÓN 4 - CAZOLETAS MEJOR VALORADAS
+   ========================================================== */
+
+.productos {
+  text-align: center;
+  padding: 60px 50px;
+  background-color: var(--color-blanco);
+}
+
+.productos h2 {
+  font-size: 1.8em;
+  color: var(--color-texto);
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.contenedor-productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.producto {
+  background-color: var(--color-fondo-claro);
+  border-radius: 10px;
+  padding: 20px;
+  width: 230px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 0.95em;
+  color: var(--color-texto);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.precio {
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--color-texto);
+  font-size: 1em;
+}
+
+.boton {
+  background-color: var(--color-rosa);
+  color: var(--color-blanco);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #e0006e;
+}
+
+
+
+/* ==========================================================
+    SECCIÓN 5 - MARCAS
+   ========================================================== */
+.marcas {
+  text-align: center;
+  background-color: var(--color-blanco);
+  padding: 60px 40px;
+}
+
+.marcas h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: var(--color-texto);
+  margin-bottom: 40px;
+}
+
+.logos-marcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logos-marcas img {
+  width: 110px;             /*  tamaño uniforme de los logos */
+  height: auto;
+  opacity: 0.8;             /*  efecto suave */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.logos-marcas img:hover {
+  opacity: 1;               /*  al pasar el ratón, destaca */
+  transform: scale(1.05);   /*  ligero zoom */
+}

@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎨 PALETA DE COLORES
+    PALETA DE COLORES
    ========================================================== */
 :root {
   --color-negro: #111111;
@@ -12,7 +12,7 @@
 }
 
 /* ==========================================================
-   🧱 ESTILOS GENERALES
+    ESTILOS GENERALES
    ========================================================== */
 * {
   box-sizing: border-box;
@@ -27,7 +27,7 @@ body {
 }
 
 /* ==========================================================
-   🔝 ENCABEZADO PRINCIPAL
+    ENCABEZADO PRINCIPAL
    ========================================================== */
 .encabezado {
   width: 100%;
@@ -158,240 +158,86 @@ body {
 
 
 
+
+
 /* ==========================================================
-   🏠 PÁGINA DE INICIO - SECCIONES 1 Y 2
+    FOOTER
    ========================================================== */
-
-/* --- SECCIÓN 1: Banner principal --- */
-.banner-principal img {
-  width: 100%;
-  height: auto;
-  display: block;
+.pie {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  padding: 50px 80px;
 }
 
-/* --- SECCIÓN 2: Cachimbas más vendidas --- */
-.productos {
-  text-align: center;
-  padding: 60px 50px;
-  background-color: var(--color-blanco);
-}
-
-.productos h2 {
-  font-size: 1.8em;
-  color: var(--color-texto);
-  margin-bottom: 35px;
-  font-weight: 700;
-}
-
-.contenedor-productos {
+.contenedor-pie {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.producto {
-  background-color: var(--color-fondo-claro);
-  border-radius: 10px;
-  padding: 20px;
-  width: 230px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* --- Logo --- */
+.logo-footer {
+  text-align: center;
 }
 
-.producto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.producto img {
-  width: 100%;
+.logo-footer img {
+  width: 200px;      /* 🔹 aumenta el tamaño del logo */
   height: auto;
-  margin-bottom: 10px;
-}
-
-.producto h3 {
-  font-size: 0.95em;
-  color: var(--color-texto);
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.producto h3 span {
   display: block;
-  font-weight: 400;
-  color: var(--color-gris);
-  font-size: 0.9em;
+  margin: 0 auto 10px;
 }
 
-.precio {
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: var(--color-texto);
+
+/* --- Columnas --- */
+.columna {
+  min-width: 200px;
+}
+
+.columna h4 {
+  color: var(--color-azul);
+  font-weight: 600;
+  margin-bottom: 10px;
   font-size: 1em;
 }
 
-.boton {
-  background-color: var(--color-rosa);
-  color: var(--color-blanco);
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.columna ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
 }
 
-.boton:hover {
-  background-color: #e0006e;
+.columna ul li {
+  margin-bottom: 5px;
 }
 
-
-
-
-/* ==========================================================
-   🖼 SECCIÓN 3 - IMAGEN + TEXTO PROMOCIONAL (A PANTALLA COMPLETA)
-   ========================================================== */
-.promocion {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: var(--color-negro);
-  color: var(--color-blanco);
-  padding: 0; /* 🔹 sin márgenes exteriores */
-}
-
-.promocion .imagen-promocion {
-  flex: 1 1 50%; /* 🔹 mitad izquierda */
-}
-
-.promocion .imagen-promocion img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 🔹 ocupa todo el alto sin deformarse */
-  display: block;
-}
-
-.texto-promocion {
-  flex: 1 1 50%; /* 🔹 mitad derecha */
-  padding: 50px 60px; /* 🔹 espacio interior */
-  max-width: 700px;
-  line-height: 1.6;
-}
-
-.texto-promocion h2 {
-  font-size: 1.4em; /* 🔹 un poco más pequeño */
-  margin-bottom: 15px;
-  font-weight: 700;
-  color: var(--color-blanco);
-}
-
-.texto-promocion p {
-  font-size: 0.9em; /* 🔹 texto más compacto */
-  margin-bottom: 12px;
-  color: #ddd;
-}
-
-.texto-promocion a {
-  color: var(--color-azul);
+.columna ul li a {
+  color: #ccc;
   text-decoration: none;
-  font-weight: 500;
+  font-size: 0.9em;
   transition: color 0.3s ease;
 }
 
-.texto-promocion a:hover {
-  color: var(--color-rosa); /* 🔹 cambia a rosa al pasar el ratón */
-  text-decoration: underline;
+.columna ul li a:hover {
+  color: var(--color-rosa);
 }
 
-
-/* ==========================================================
-   🏺 SECCIÓN 4 - CAZOLETAS MEJOR VALORADAS
-   ========================================================== */
-
-.productos {
-  text-align: center;
-  padding: 60px 50px;
-  background-color: var(--color-blanco);
-}
-
-.productos h2 {
-  font-size: 1.8em;
-  color: var(--color-texto);
-  margin-bottom: 35px;
-  font-weight: 700;
-}
-
-.contenedor-productos {
+/* --- Redes Sociales --- */
+.redes {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
 }
 
-.producto {
-  background-color: var(--color-fondo-claro);
-  border-radius: 10px;
-  padding: 20px;
-  width: 230px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.redes a {
+  color: var(--color-azul);
+  font-size: 1.1em;
+  transition: color 0.3s ease;
 }
 
-.producto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.redes a:hover {
+  color: var(--color-rosa);
 }
 
-.producto img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.producto h3 {
-  font-size: 0.95em;
-  color: var(--color-texto);
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.precio {
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: var(--color-texto);
-  font-size: 1em;
-}
-
-.boton {
-  background-color: var(--color-rosa);
-  color: var(--color-blanco);
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.boton:hover {
-  background-color: #e0006e;
-}
-
-
-
-
-/* ==========================================================
-   📱 RESPONSIVE
-   ========================================================== */
-@media (max-width: 900px) {
-  .navegacion ul {
-    display: none; /* Se puede sustituir luego por un menú hamburguesa */
-  }
-
-  .buscador {
-    width: 150px;
-  }
-}
