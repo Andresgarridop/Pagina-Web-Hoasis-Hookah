@@ -1,0 +1,150 @@
+/* Sección principal del producto */
+.detalle-producto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 50px 100px;
+}
+
+.imagen-producto img {
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.info-producto {
+  max-width: 600px;
+}
+
+.info-producto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.acciones-producto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cantidad button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.cantidad input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+}
+
+.boton {
+  background-color: var(--color-rosa);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.boton-secundario {
+  background-color: white;
+  color: var(--color-rosa);
+  border: 2px solid var(--color-rosa);
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Productos relacionados */
+.relacionados {
+  padding: 40px 100px;
+}
+
+.relacionados h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contenedor-productos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.contenedor-productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.enlace-producto {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit;        /* Hereda el color del texto normal */
+  display: block;        /* Hace que el enlace abarque toda la tarjeta */
+}
+
+.enlace-producto h4,
+.enlace-producto p {
+  color: #000; /* Asegura texto negro o el color que uses */
+}
+
+.enlace-producto:visited h4 {
+  color: #000; /* Evita que se pongan morados después de hacer clic */
+}
+
+.enlace-producto .producto {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.enlace-producto .producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}

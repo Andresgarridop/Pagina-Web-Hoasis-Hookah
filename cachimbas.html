@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <title>Cachimbas</title>
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="encabezado">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo OasisHookah">
+        </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="cachimbas.html" class="activo">CACHIMBAS</a></li>
+                <li><a href="cazoletas.html">CAZOLETAS</a></li>
+                <li><a href="accesorios.html">ACCESORIOS</a></li>
+            </ul>
+        </nav>
+
+        <!-- ZONA DERECHA -->
+        <div class="zona-derecha">
+            <!-- BUSCADOR -->
+            <div class="buscador">
+                <input type="text" placeholder="Buscar">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- ICONOS -->
+            <div class="iconos">
+                <a href="carrito.html" class="icono-carrito">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+                <i class="fa fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!--  SECCIÓN CACHIMBAS -->
+    <main class="pagina-productos">
+        <aside class="filtros">
+            <h3>Filtrar</h3>
+
+            <div class="filtro">
+                <h4>Precio</h4>
+                <div class="rango-precio">
+                    <label>Desde</label>
+                    <input type="number" value="9"> €
+                    <label>Hasta</label>
+                    <input type="number" value="2400"> €
+                </div>
+            </div>
+
+            <div class="filtro">
+                <h4>Fabricante</h4>
+                <ul>
+                    <li><input type="checkbox"> Aladin</li>
+                    <li><input type="checkbox"> Alpha Hookah</li>
+                    <li><input type="checkbox"> Mr Shisha</li>
+                    <li><input type="checkbox"> Regal</li>
+                    <li><input type="checkbox"> VZ Hookah</li>
+                </ul>
+            </div>
+
+            <div class="filtro">
+                <h4>Tamaño</h4>
+                <ul>
+                    <li><input type="checkbox"> Medianas</li>
+                    <li><input type="checkbox"> Pequeñas</li>
+                </ul>
+            </div>
+
+            <div class="filtro">
+                <h4>Cierre</h4>
+                <ul>
+                    <li><input type="checkbox"> Presión con goma</li>
+                    <li><input type="checkbox"> Rosca</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="productos">
+            <h2>CACHIMBAS</h2>
+            <p>Productos seleccionados: <strong>18</strong></p>
+
+            <div class="contenedor-productos">
+                <!-- Tarjeta de producto -->
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/aladin-mvp-360-full-red.png" alt="Cachimba Aladin MVP 360">
+                        <h3>Cachimba Aladin MVP 360 - Full Red</h3>
+                        <p class="precio">89,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/aladin-mvp-360-shiny-clear.png" alt="Cachimba Aladin MVP 360">
+                        <h3>Cachimba Aladin MVP 360 - Shiny Clear</h3>
+                        <p class="precio">89,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <div class="producto">
+                    <img src="img/productos/aladin-mvp-460-rainbow.png" alt="Cachimba Aladin MVP 460 - Rainbow">
+                    <h3>Cachimba Aladin MVP 460 - Rainbow</h3>
+                    <p class="precio">99,95 €</p>
+                    <button class="boton">AÑADIR A LA CESTA</button>
+                </div>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/alpha-hookah-model-x-orange-neon.png" alt="Cachimba Alpha Hookah">
+                        <h3>Cachimba Alpha Hookah - Model X Neon Orange</h3>
+                        <p class="precio">219,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/alpha-hookah-model-x-pink-neon.png"
+                            alt="Cachimba Alpha Hookah - Model X Neon Pink">
+                        <h3>Cachimba Alpha Hookah</h3>
+                        <p>Model X - Neon Pink</p>
+                        <p class="precio">214,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/alpha-hookah-model-x-yellow-neon.png"
+                            alt="Cachimba Alpha Hookah - Model X Neon Yellow">
+                        <h3>Cachimba Alpha Hookah</h3>
+                        <p>Model X - Neon Yellow</p>
+                        <p class="precio">214,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+
+                    <div class="producto">
+                        <img src="img/productos/alpha-hookah-model-x-lima.png"
+                            alt="Cachimba Alpha Hookah - Model X Lima">
+                        <h3>Cachimba Alpha Hookah</h3>
+                        <p>Model X - Lima</p>
+                        <p class="precio">214,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/VZCustom.png" alt="Cachimba VZ Hookah - Custom V2">
+                        <h3>Cachimba VZ Hookah</h3>
+                        <p>Custom V2</p>
+                        <p class="precio">349,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/vz-customs-mini.png" alt="Cachimba VZ Hookah - Custom Mini">
+                        <h3>Cachimba VZ Hookah</h3>
+                        <p>Custom Mini</p>
+                        <p class="precio">299,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/cachimba-vz-mini-brass.png" alt="Cachimba VZ Hookah - Mini Brass">
+                        <h3>Cachimba VZ Hookah - Mini Brass</h3>
+                        <p class="precio">379,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/cachimba-vz-custom-v4-brass.png"
+                            alt="Cachimba VZ Hookah - Custom V4 Brass">
+                        <h3>Cachimba VZ Hookah - Custom V4 Brass</h3>
+                        <p class="precio">399,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/cachimba-vz-custom-v4.png" alt="Cachimba VZ Hookah - Custom V4">
+                        <h3>Cachimba VZ Hookah - Custom V4</h3>
+                        <p class="precio">328,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/nayb-hookah-mastil-blue-dark-tangle.png"
+                            alt="Cachimba Nayb Hookah Up Down - Blue Dark Tangle">
+                        <h3>Cachimba Nayb Hookah Up Down - Blue Dark Tangle</h3>
+                        <p class="precio">199,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/nayb-hookah-mastil-pink-turquoise-gold.png"
+                            alt="Cachimba Nayb Hookah Up Down - Pink/Turquoise Gold">
+                        <h3>Cachimba Nayb Hookah Up Down - Pink/Turquoise Gold</h3>
+                        <p class="precio">199,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+
+                    <div class="producto">
+                        <img src="img/productos/cachimba-nayb-30-wavy-purplegreen.png"
+                            alt="Cachimba Nayb 3.0 - Wavy Purple/Green">
+                        <h3>Cachimba Nayb 3.0 - Wavy Purple/Green</h3>
+                        <p class="precio">219,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/cachimba-regal-queen-diamond-wood-red-rider.png"
+                            alt="Cachimba Regal Queen Diamond Wood - Red Rider">
+                        <h3>Cachimba Regal Queen Diamond Wood - Red Rider</h3>
+                        <p class="precio">449,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/cachimba-regal-epoxy-bishop-red-winewood.png"
+                            alt="Cachimba Regal Epoxy - Bishop Red Winewood">
+                        <h3>Cachimba Regal Epoxy - Bishop Red Winewood</h3>
+                        <p class="precio">999,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+                <a href="producto.html" class="enlace-producto">
+                    <div class="producto">
+                        <img src="img/productos/cachimba-regal-epoxy-queen-blue-wood.png"
+                            alt="Cachimba Regal Epoxy - Queen Blue Wood">
+                        <h3>Cachimba Regal Epoxy - Queen Blue Wood</h3>
+                        <p class="precio">1.099,95 €</p>
+                        <button class="boton">AÑADIR A LA CESTA</button>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <!--  FOOTER -->
+    <footer class="pie">
+        <div class="contenedor-pie">
+
+            <!-- Logo -->
+            <div class="columna logo-footer">
+                <img src="img/logo.png" alt="Logo OasisHookah">
+
+            </div>
+
+            <!-- Información -->
+            <div class="columna">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Legal -->
+            <div class="columna">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Términos de Uso</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

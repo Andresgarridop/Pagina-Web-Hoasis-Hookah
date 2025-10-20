@@ -46,7 +46,7 @@ body {
 .logo {
   height: 150px;   
   width: auto;   
-  max-height: 60px; /* 🔹 evita que se acerque demasiado al borde */
+  max-height: 60px; /*  evita que se acerque demasiado al borde */
 }
 
 .logo img {
