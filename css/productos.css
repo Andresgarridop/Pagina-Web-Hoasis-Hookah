@@ -1,5 +1,5 @@
 /* ==========================================================
-   🛍️ PÁGINA DE PRODUCTOS (CACHIMBAS)
+    PÁGINA DE PRODUCTOS (CACHIMBAS)
    ========================================================== */
 
 .pagina-productos {
@@ -85,6 +85,15 @@
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.producto .boton {
+  margin-top: auto;
+  /* empuja el botón hacia el final del contenedor */
 }
 
 .producto:hover {
@@ -127,9 +136,12 @@
 }
 
 .enlace-producto {
-  text-decoration: none;  /* quita el subrayado */
-  color: inherit;         /* mantiene los colores del texto */
-  display: block;         /* hace que el enlace abarque toda la tarjeta */
+  text-decoration: none;
+  /* quita el subrayado */
+  color: inherit;
+  /* mantiene los colores del texto */
+  display: block;
+  /* hace que el enlace abarque toda la tarjeta */
 }
 
 .enlace-producto .producto {

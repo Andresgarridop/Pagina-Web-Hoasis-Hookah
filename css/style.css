@@ -102,7 +102,7 @@ body {
   background-color: var(--color-blanco);
   border-radius: 30px;       /* 🔹 esquinas suaves */
   overflow: hidden;          /* 🔹 evita que la lupa se salga */
-  width: 220px;              /* 🔹 ancho equilibrado */
+  width: 230px;              /* 🔹 ancho equilibrado */
   height: 35px;              /* 🔹 altura uniforme */
   padding: 0 10px 0 15px;    /* 🔹 espacio interno */
 }
@@ -137,6 +137,7 @@ body {
 .buscador button:hover {
   color: var(--color-azul);  /* 🔹 cambia color al pasar el ratón */
 }
+
 
 /* --- ICONOS --- */
 .iconos {
