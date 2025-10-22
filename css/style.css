@@ -161,6 +161,8 @@ body {
 
 
 
+
+
 /* ==========================================================
     FOOTER
    ========================================================== */
@@ -242,3 +244,36 @@ body {
   color: var(--color-rosa);
 }
 
+.licencia {
+  font-size: 0.85em;
+  color: #ccc;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.licencia a {
+  color: var(--color-azul);
+  text-decoration: none;
+}
+
+.licencia a:hover {
+  color: var(--color-rosa);
+}
+
+.licencia img {
+  width: 26px;
+  height: 26px;
+  margin: 0 4px;
+}
+
+/*  Contenedor de los iconos */
+.licencia-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.licencia span {
+  white-space: nowrap; 
+}
