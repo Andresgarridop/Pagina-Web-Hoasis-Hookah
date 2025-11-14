@@ -81,9 +81,10 @@
   cursor: pointer;
 }
 
+/* ===============================
+   Productos relacionados
+   =============================== */
 
-
-/* Productos relacionados */
 .relacionados {
   padding: 40px 100px;
 }
@@ -93,37 +94,59 @@
   margin-bottom: 20px;
 }
 
-.contenedor-productos {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-
-.contenedor-productos {
+/* Contenedor de los productos relacionados */
+.relacionados .contenedor-productos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 20px;
   margin-top: 20px;
 }
 
-.producto {
+/* Tarjetas de producto relacionados (más pequeñas) */
+.relacionados .producto {
   background: #fff;
   border-radius: 15px;
-  padding: 20px;
+  padding: 15px;              /* antes 20px */
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  width: 180px;               /* antes 250px → más chico */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.producto:hover {
+/* Imagen dentro de los relacionados (más pequeña) */
+.relacionados .producto img {
+  width: 100%;
+  height: 130px;              /* controlamos altura para que no se vean gigantes */
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Título del producto relacionado (ligeramente más pequeño) */
+.relacionados .producto h4 {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+/* Precio del producto relacionado */
+.relacionados .producto .precio {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+/* Botón dentro de los relacionados (un poco más pequeño) */
+.relacionados .producto .boton {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+/* Hover de las tarjetas relacionadas */
+.relacionados .producto:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Enlaces de las tarjetas de producto */
 .enlace-producto {
   text-decoration: none; /* Quita el subrayado */
   color: inherit;        /* Hereda el color del texto normal */
