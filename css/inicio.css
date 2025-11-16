@@ -259,3 +259,38 @@
   opacity: 1;               /*  al pasar el ratón, destaca */
   transform: scale(1.05);   /*  ligero zoom */
 }
+
+
+.seccion-audio {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.seccion-audio h2 {
+  margin-bottom: 15px;
+  color: var(--color-negro);
+}
+
+.seccion-audio audio {
+  width: 60%;
+  max-width: 400px;
+}
+
+
+.seccion-video {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.seccion-video h2 {
+  margin-bottom: 20px;
+  color: var(--color-negro);
+}
+
+.seccion-video video {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
