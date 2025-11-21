@@ -1,0 +1,33 @@
+/* ==========================================================
+   VARIABLES GENERALES DE COLOR
+   ========================================================== */
+
+/* Colores generales */
+$color-negro: #0f0f0f;
+$color-blanco: #ffffff;
+$color-azul: #16c1f3;
+$color-rosa: #ff0080;
+$color-gris: #f5f5f5;
+$color-subtitulo: #9CA3AF;   // gris suave, igual al de inicio
+
+
+$color-texto: #1F2937;
+
+/* Colores auxiliares usados en el proyecto */
+$color-fondo-claro: #F4F7FB;     // usado en tarjetas y fondo de inicio
+$color-gris: #9CA3AF;            // gris suave para textos
+$gris-claro: #ccc;               // bordes, inputs, iconos
+$gris-placeholder: #777;         // placeholder y texto suave
+$gris-medio: #ddd;               // bordes medios
+$gris-borde: #eee;               // bordes claros
+$gris-oscuro: #555;              // textos oscuros
+
+/* Sombras */
+$sombra-suave: rgba(0, 0, 0, 0.1);
+$sombra-media: rgba(0, 0, 0, 0.15);
+$sombra-fuerte: rgba(0, 0, 0, 0.3);
+
+/* Variantes */
+$rosa-oscuro: #e0006e;           // hover botones (inicio)
+$rosa-oscuro-2: #e0006c;         // hover botones (login/productos)
+$fondo-tarjeta: #fafafa;         // productos (cachimbas)

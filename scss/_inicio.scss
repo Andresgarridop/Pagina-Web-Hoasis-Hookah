@@ -1,0 +1,315 @@
+/* ==========================================================
+    PÁGINA DE INICIO 
+   ========================================================== */
+
+/* --- SECCIÓN 1: Banner principal --- */
+.banner-principal img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ======================
+   SLIDER ANIMADO CSS PURO
+   ====================== */
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  animation: slide 12s infinite;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* ANIMACIÓN SLIDER */
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  30%  { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  63%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  96%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+/* ==========================================================
+    SECCIÓN 2: Productos más vendidos
+   ========================================================== */
+.productos {
+  text-align: center;
+  padding: 60px 50px;
+  background-color: $color-blanco;
+
+  h2 {
+    font-size: 1.8em;
+    color: $color-texto;
+    margin-bottom: 35px;
+    font-weight: 700;
+  }
+}
+
+/* ==========================================================
+    SECCIÓN 2: Productos más vendidos (CORREGIDO)
+   ========================================================== */
+
+.productos {
+  text-align: center;
+  padding: 60px 50px;
+  background-color: $color-blanco;
+
+  h2 {
+    font-size: 1.8em;
+    color: $color-texto;
+    margin-bottom: 35px;
+    font-weight: 700;
+  }
+}
+
+/* CONTENEDOR DE TARJETAS */
+.contenedor-productos {
+  display: flex;
+  justify-content: center !important;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* TARJETA DE PRODUCTO — CORREGIDA */
+.producto {
+  background-color: $color-fondo-claro;
+  border-radius: 10px;
+  padding: 20px;
+  width: 230px;
+  height: 420px;                           /* 🔥 MISMA ALTURA PARA TODAS */
+  box-shadow: 0 2px 8px $sombra-suave;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  display: flex;                            /* 🔥 PARA ALINEAR CONTENIDO */
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px $sombra-media;
+  }
+
+  /* IMAGEN — AHORA TODAS IGUALES */
+  img {
+    width: 100%;
+    height: 200px;                          /*  FIJAMOS ALTURA */
+    object-fit: contain;                    /* No se deforma */
+    margin-bottom: 10px;
+  }
+
+  /* TÍTULO */
+  h3 {
+    font-size: 0.95em;
+    color: $color-texto;
+    margin-bottom: 8px;
+    font-weight: 600;
+    min-height: 45px;                        /*  ALTURA FIJA PARA TODOS */
+
+    span {
+      display: block;
+      font-weight: 400;
+      color: $color-subtitulo;               /*  SUBTÍTULO MÁS OSCURO */
+      font-size: 0.9em;
+      min-height: 20px;                      /*  MISMA ALTURA */
+    }
+  }
+
+  /* PRECIO */
+  .precio {
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: $color-texto;
+    font-size: 1em;
+    text-align: center;                      /*  CENTRADO */
+  }
+
+  /* BOTÓN */
+  .boton {
+    background-color: $color-rosa;
+    color: $color-blanco;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto;                        /*  SIEMPRE ABAJO */
+
+    &:hover {
+      background-color: $rosa-oscuro;
+    }
+  }
+}
+
+
+/* ==========================================================
+    SECCIÓN 3: Imagen + Texto promocional
+   ========================================================== */
+
+.promocion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: $color-negro;
+  color: $color-blanco;
+  padding: 0;
+
+  .imagen-promocion {
+    flex: 1 1 50%;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .texto-promocion {
+    flex: 1 1 50%;
+    padding: 50px 60px;
+    max-width: 700px;
+    line-height: 1.6;
+
+    h2 {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: $color-blanco;
+    }
+
+    p {
+      font-size: 0.9em;
+      margin-bottom: 12px;
+      color: $gris-medio;
+    }
+
+    a {
+      color: $color-azul;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-rosa;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* ==========================================================
+    SECCIÓN 5: MARCAS
+   ========================================================== */
+.marcas {
+  text-align: center;
+  background-color: $color-blanco;
+  padding: 60px 40px;
+
+  h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: $color-texto;
+    margin-bottom: 40px;
+  }
+}
+
+.logos-marcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  img {
+    width: 110px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* ==========================================================
+    AUDIO Y VIDEO
+   ========================================================== */
+.seccion-audio,
+.seccion-video {
+  text-align: center;
+  margin: 40px 0;
+
+  h2 {
+    margin-bottom: 15px;
+    color: $color-negro;
+  }
+
+  audio {
+    width: 60%;
+    max-width: 400px;
+  }
+
+  video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+}
+
+#audioFondo {
+    display: none;
+}
+
+/* BOTÓN FLOTANTE */
+.boton-audio {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #ff0080;
+    color: white;
+    border: none;
+    font-size: 22px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 9999;
+}
+
+.boton-audio:hover {
+    background-color: #d1006b;
+    transform: scale(1.1);
+}

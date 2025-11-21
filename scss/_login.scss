@@ -1,0 +1,83 @@
+/* ==========================================================
+    PÁGINA DE LOGIN
+   ========================================================== */
+
+.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background-color: $color-gris;
+}
+
+.form-login {
+  background-color: $color-blanco;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  h2 {
+    text-align: center;
+    color: $color-negro;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-weight: 600;
+    color: $color-negro;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid $gris-claro;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $color-azul;
+      outline: none;
+    }
+  }
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-login {
+  background-color: $color-rosa;
+  border: none;
+  color: $color-blanco;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $rosa-oscuro-2;
+  }
+}
+
+.registro-texto {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 10px;
+
+  a {
+    color: $color-azul;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
