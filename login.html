@@ -2,124 +2,149 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iniciar Sesión | Oasis Hookah</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Oasis Hookah</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Bootstrap local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Tus estilos compilados por SASS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <!-- ===== ENCABEZADO ===== -->
-  <header class="encabezado">
+<body class="fondo-formularios">
 
-    <!-- LOGO -->
-    <div class="logo">
-      <img src="img/logos/Logo.ico" alt="Logo OasisHookah">
-    </div>
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="encabezado">
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="navegacion">
-      <ul>
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="cachimbas.html">CACHIMBAS</a></li>
-        <li><a href="cazoletas.html">CAZOLETAS</a></li>
-        <li><a href="accesorios.html">ACCESORIOS</a></li>
-      </ul>
-    </nav>
-
-    <!-- ZONA DERECHA -->
-    <div class="zona-derecha">
-      <!-- BUSCADOR -->
-      <div class="buscador">
-        <input type="text" placeholder="Buscar">
-        <button><i class="fa fa-search"></i></button>
-      </div>
-
-      <!-- ICONOS -->
-      <div class="iconos">
-        <a href="carrito.html" class="icono-carrito">
-          <i class="fa fa-shopping-cart"></i>
-        </a>
-        <a href="login.html" class="icono-login">
-          <i class="fa fa-user"></i>
-        </a>
-      </div>
-    </div>
-  </header>
-
-
-  <!--  FORMULARIO DE LOGIN -->
-  <main class="contenedor-login">
-    <form class="form-login">
-      <h2>Iniciar Sesión</h2>
-
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" placeholder="Tu correo" required>
-
-      <label for="password">Contraseña</label>
-      <input type="password" id="password" placeholder="Tu contraseña" required>
-
-      <div class="acciones">
-        <button type="submit" class="btn-login">Entrar</button>
-      </div>
-
-      <p class="registro-texto">
-        ¿No tienes cuenta? <a href="#">Regístrate aquí</a>
-      </p>
-    </form>
-  </main>
-
-  <!--  FOOTER -->
-  <footer class="pie">
-    <div class="contenedor-pie">
-
-      <!-- Logo -->
-      <div class="columna logo-footer">
-        <img src="img/logos/Logo.ico" alt="Logo OasisHookah">
-        <!-- Licencia Creative Commons -->
-        <p class="licencia">
-          <span class="licencia-icons">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY">
-            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC">
-          </span>
-          <a href="https://creativecommons.org">OasisHookah</a> © 2025 by
-          <a href="https://creativecommons.org">Andrés Garrido</a> is licensed under
-          <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
-        </p>
-      </div>
-
-      <!-- Información -->
-      <div class="columna">
-        <h4>Información</h4>
-        <ul>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
-        </ul>
-
-        <div class="redes">
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="img/logos/Logo.ico" alt="Logo OasisHookah">
         </div>
-      </div>
 
-      <!-- Legal -->
-      <div class="columna">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="#">Aviso Legal</a></li>
-          <li><a href="#">Política de Privacidad</a></li>
-          <li><a href="#">Política de Cookies</a></li>
-          <li><a href="#">Términos de Uso</a></li>
-        </ul>
-      </div>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="cachimbas.html">CACHIMBAS</a></li>
+                <li><a href="cazoletas.html">CAZOLETAS</a></li>
+                <li><a href="accesorios.html">ACCESORIOS</a></li>
+            </ul>
+        </nav>
 
-    </div>
-  </footer>
+        <div class="zona-derecha">
+            <div class="buscador">
+                <input type="text" placeholder="Buscar">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+            <div class="iconos">
+                <a href="carrito.html"><i class="fa fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= MAIN LOGIN ================= -->
+    <main class="container py-5">
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+
+                <div class="card shadow border-0 p-4" style="border-radius: 14px;">
+                    <h2 class="text-center mb-4" style="color: var(--color-azul); font-weight:700;">
+                        Iniciar sesión
+                    </h2>
+
+                    <form>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" placeholder="ejemplo@email.com">
+                        </div>
+
+                        <!-- Contraseña -->
+                        <div class="mb-4">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="********">
+                        </div>
+
+                        <!-- Botón -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-lg w-100 boton-registro">
+                                Entrar
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Enlace a registro -->
+                    <p class="text-center mt-3 mb-0">
+                        ¿No tienes cuenta?
+                        <a href="registro.html" style="color: var(--color-azul); font-weight:600;">
+                            Crear cuenta
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="pie">
+        <div class="contenedor-pie">
+            <div class="columna logo-footer">
+                <img src="img/logos/Logo.ico" alt="Logo OasisHookah">
+
+                <p class="licencia">
+                    <span class="licencia-icons">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC">
+                    </span>
+                    <a href="#">OasisHookah</a> © 2025 by
+                    <a href="#">Andrés Garrido</a> is licensed under
+                    <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
+                </p>
+            </div>
+
+            <div class="columna">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="columna">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Términos de Uso</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap local -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>

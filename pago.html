@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Oasis Hookah</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="fondo-formularios">
+
+    <!-- HEADER -->
+    <header class="encabezado">
+        <div class="logo">
+            <img src="img/logos/Logo.ico" alt="Logo OasisHookah">
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="cachimbas.html">CACHIMBAS</a></li>
+                <li><a href="cazoletas.html">CAZOLETAS</a></li>
+                <li><a href="accesorios.html">ACCESORIOS</a></li>
+            </ul>
+        </nav>
+
+        <div class="zona-derecha">
+            <div class="buscador">
+                <input type="text" placeholder="Buscar">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <div class="iconos">
+                <a href="carrito.html"><i class="fa fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <div class="card shadow border-0 p-4" style="border-radius: 14px;">
+                    <h3 class="mb-4 fw-bold text-center" style="color: var(--color-azul);">Pago seguro</h3>
+
+                    <div class="d-flex justify-content-center gap-3 mb-3">
+                        <i class="fa-brands fa-cc-visa fa-2x"></i>
+                        <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                        <i class="fa-brands fa-cc-amex fa-2x"></i>
+                    </div>
+
+                    <form id="form-pago">
+
+                        <div class="mb-3">
+                            <label class="form-label">Titular de la tarjeta</label>
+                            <input type="text" class="form-control" placeholder="Nombre completo">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Número de tarjeta</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-credit-card"></i></span>
+                                <input type="text" class="form-control" placeholder="XXXX XXXX XXXX XXXX">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <label class="form-label">Expiración</label>
+                                <input type="text" class="form-control" placeholder="MM/AA">
+                            </div>
+
+                            <div class="col-6 mb-3">
+                                <label class="form-label">CVV</label>
+                                <input type="password" class="form-control" placeholder="***">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="d-grid">
+                            <button type="button" id="btn-finalizar" class="btn btn-lg boton-compra">
+                                Finalizar compra
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal fade" id="modalCompraOk" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                    <i class="fa-solid fa-circle-check fa-3x mb-3" style="color: var(--color-azul);"></i>
+
+                    <h3 class="fw-bold">¡Compra realizada!</h3>
+                    <p class="mt-2">Gracias por tu pedido.</p>
+
+                    <button type="button" class="btn btn-lg boton-compra" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--  FOOTER -->
+    <footer class="pie">
+        <div class="contenedor-pie">
+
+            <!-- Logo -->
+            <div class="columna logo-footer">
+                <img src="img/logos/Logo.ico" alt="Logo OasisHookah">
+                <!-- Licencia Creative Commons -->
+                <p class="licencia">
+                    <span class="licencia-icons">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC">
+                    </span>
+                    <a href="https://creativecommons.org">OasisHookah</a> © 2025 by
+                    <a href="https://creativecommons.org">Andrés Garrido</a> is licensed under
+                    <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
+                </p>
+            </div>
+
+            <!-- Información -->
+            <div class="columna">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Legal -->
+            <div class="columna">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Términos de Uso</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS PARA MOSTRAR EL MODAL -->
+    <script>
+        document.getElementById("btn-finalizar").addEventListener("click", function () {
+            let modal = new bootstrap.Modal(document.getElementById("modalCompraOk"));
+            modal.show();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,15 +1,17 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// @import 'bootstrap-custom';
+
 @import 'variables';
 @import 'mixins';
-// @import 'bootstrap-custom';
-// @import 'header';
-// @import 'footer';
+
 @import 'inicio';
 @import 'productos';
 @import 'producto';
 @import 'carrito';
-@import 'login';
-
-// @import 'formularios';
+// @import 'login';
+@import 'formularios';
 
 
 /* ==========================================================
@@ -42,6 +44,19 @@ body {
   top: 0;
   z-index: 100;
 }
+
+/* Corrección de márgenes añadidos por Bootstrap */
+.encabezado {
+  margin: 0 !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.navegacion ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 
 /* === LOGO === */
 .logo {
@@ -264,3 +279,38 @@ body {
 .licencia span {
   white-space: nowrap;
 }
+
+
+
+.boton-registro {
+  background-color: $color-rosa !important;
+  color: $color-blanco !important;
+  font-weight: 600;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+.boton-registro:hover,
+.boton-registro:focus,
+.boton-registro:active {
+  background-color: $rosa-oscuro-2 !important;
+  color: $color-blanco !important;
+}
+
+
+.boton-compra {
+  background-color: $color-rosa;
+  color: white;
+  font-weight: 700;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: $rosa-oscuro;
+  }
+}
+
+

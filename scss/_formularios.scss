@@ -1,0 +1,18 @@
+/* Fondo especial para páginas de login y registro */
+.fondo-formularios {
+  background-color: #f5f7fb !important;
+  min-height: 100vh;
+}
+
+.boton-compra {
+  background-color: $color-rosa;
+  color: white !important;       //  TEXTO SIEMPRE BLANCO
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+
+  &:hover {
+    background-color: $rosa-oscuro;
+    color: white !important;     //  EVITA QUE SE PONGA NEGRO
+  }
+}

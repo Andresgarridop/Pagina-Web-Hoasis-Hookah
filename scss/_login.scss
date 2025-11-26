@@ -81,3 +81,39 @@
     }
   }
 }
+
+
+/* ==========================================================
+   FORMULARIOS (Login + Registro)
+   ========================================================== */
+
+.card form .form-control {
+  border-radius: 8px;
+  border-color: #ddd;
+}
+
+.card form .form-control:focus {
+  border-color: $color-azul;
+  box-shadow: 0 0 0 0.15rem rgba(22, 193, 243, 0.25);
+}
+
+.card {
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.btn-registro,
+.btn-login {
+  background-color: $color-rosa;
+  color: $color-blanco;
+  font-weight: 600;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: $rosa-oscuro;
+  }
+}
+
+.contenedor-login {
+  background-color: $fondo-tarjeta;
+}
