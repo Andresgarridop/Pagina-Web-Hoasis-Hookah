@@ -4,29 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión - Oasis Hookah</title>
+    <title>Producto - Oasis Hookah</title>
 
-    <!-- Bootstrap local -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Tus estilos compilados por SASS -->
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .boton:hover {
+    background-color: var(--color-rosa) !important;
+    color:  #ff0080!important;
+    border: solid;
+    border-color:  #ff0080;
+    opacity: 1 !important;
+    border-color: var(--color-rosa) !important;
+}
+
+    </style>
 </head>
 
-<body class="fondo-formularios">
+<body>
 
-    <!-- ===== ENCABEZADO ===== -->
+    <!-- ============= HEADER ============= -->
     <header class="encabezado">
-
-        <!-- LOGO -->
         <div class="logo">
             <img src="img/logos/Logo.ico" alt="Logo OasisHookah">
         </div>
 
-        <!-- MENÚ DE NAVEGACIÓN -->
         <nav class="navegacion">
             <ul>
                 <li><a href="index.html">INICIO</a></li>
@@ -34,7 +38,6 @@
                 <li><a href="cazoletas.html">CAZOLETAS</a></li>
                 <li><a href="accesorios.html">ACCESORIOS</a></li>
                 <li><a href="packs.html">PACKS</a></li>
-
             </ul>
         </nav>
 
@@ -51,69 +54,66 @@
         </div>
     </header>
 
-    <!-- ================= MAIN LOGIN ================= -->
+    <!-- ============= CONTENIDO PRODUCTO ============= -->
     <main class="container py-5">
 
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-5">
+        <div class="row align-items-center">
 
-                <div class="card shadow border-0 p-4" style="border-radius: 14px;">
-                    <h2 class="text-center mb-4" style="color: var(--color-azul); font-weight:700;">
-                        Iniciar sesión
-                    </h2>
+            <!-- IMAGEN -->
+            <div class="col-lg-5 text-center mb-4">
+                <img src="img/cachimbas/vz-custom-v2.png" class="img-fluid" style="max-height: 500px;" alt="Producto">
+            </div>
 
-                    <form>
+            <!-- INFO -->
+            <div class="col-lg-7">
 
-                        <!-- Email -->
-                        <div class="mb-3">
-                            <label class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" placeholder="ejemplo@email.com">
-                        </div>
+                <h2 class="fw-bold mb-3">Cachimba VZ Hookah - Custom V2</h2>
 
-                        <!-- Contraseña -->
-                        <div class="mb-4">
-                            <label class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" placeholder="********">
-                        </div>
+                <h3 class="fw-bold mb-4" style="color: var(--color-texto);">
+                    349,95 € IVA inc
+                </h3>
 
-                        <!-- Botón -->
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-lg w-100 boton-registro">
-                                Entrar
-                            </button>
-                        </div>
-                    </form>
+                <p class="mb-4" style="font-size:1.1rem;">
+                    La cachimba VZ CUSTOM V2 es una cachimba de la marca premium de cachimbas rusa VZ,
+                    mide aprox. 52 cm y está fabricada en acero inoxidable de alta calidad. Las piezas
+                    son intercambiables y el sistema es modular.
+                </p>
 
-                    <!-- Enlace a registro -->
-                    <p class="text-center mt-3 mb-0">
-                        ¿No tienes cuenta?
-                        <a href="registro.html" style="color: var(--color-azul); font-weight:600;">
-                            Crear cuenta
-                        </a>
-                    </p>
+                <!-- Selector cantidad -->
+                <div class="d-flex align-items-center gap-2 mb-4">
+
+                    <button class="btn btn-outline-dark px-3">-</button>
+                    <input type="text" class="form-control text-center" value="1" style="width:60px;">
+                    <button class="btn btn-outline-dark px-3">+</button>
+
+                </div>
+
+                <div class="d-flex gap-3">
+
+                    <a class="btn boton w-50">AÑADIR A CESTA</a>
+
 
                 </div>
 
             </div>
+
         </div>
 
     </main>
 
-    <!-- ========== FOOTER ========== -->
+    <!-- ============= FOOTER ============= -->
     <footer class="pie">
         <div class="contenedor-pie">
+
             <div class="columna logo-footer">
                 <img src="img/logos/Logo.ico" alt="Logo OasisHookah">
-
                 <p class="licencia">
                     <span class="licencia-icons">
                         <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC">
                         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY">
                         <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC">
                     </span>
-                    <a href="#">OasisHookah</a> © 2025 by
-                    <a href="#">Andrés Garrido</a> is licensed under
-                    <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
+                    <a href="https://creativecommons.org">OasisHookah</a> © 2025
                 </p>
             </div>
 
@@ -123,11 +123,9 @@
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Sobre Nosotros</a></li>
                 </ul>
-
                 <div class="redes">
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
@@ -137,16 +135,15 @@
                 <ul>
                     <li><a href="#">Aviso Legal</a></li>
                     <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Política de Cookies</a></li>
-                    <li><a href="#">Términos de Uso</a></li>
+                    <li><a href="#">Cookies</a></li>
                 </ul>
             </div>
 
         </div>
     </footer>
 
-    <!-- Bootstrap local -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

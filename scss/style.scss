@@ -10,6 +10,7 @@
 @import 'productos';
 @import 'producto';
 @import 'carrito';
+
 // @import 'login';
 @import 'formularios';
 
@@ -313,4 +314,18 @@ body {
   }
 }
 
+
+
+/* =============================
+   AJUSTES PÁGINA PACKS
+   ============================= */
+.packs-page .row {
+  justify-content: center;   /* centra las columnas dentro del container */
+}
+
+.packs-page .pack-card {
+  width: 260px;              /* tarjetas un poco más anchas */
+  max-width: 260px;
+  border-radius: 15px;
+}
 
